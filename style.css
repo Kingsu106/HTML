@@ -152,6 +152,7 @@ div#sidebar{
 }
 div#footer{
 	clear:both;
+	border-top: 1px solid #a3a2a3;
 }
 div#sidebar h2 {
 	border-bottom: 1px solid #666666;
@@ -178,4 +179,33 @@ div#footer div.fLeft {
 div#footer div.fRight {
 	float: right;
 	width: 530px;
+	margin-top: 40px;
+}
+div#footer:after {
+	clear:both;
+	content: ".";
+	display:block;
+	line-height: 0;
+	height: 0;
+	visibility: hidden;
+}
+div#footer div.fRight ul {
+	text-align: right;
+	margin-bottom: 10px;
+}
+div#footer div.fRight ul li{
+	display: inline;
+	border-right: 1px solid #333;
+	padding: 0 5px;
+}
+div#footer div.fRight ul li.last{
+	border-right: none;
+	padding: 0;
+}
+div#footer div.fRight p {
+	text-align: right;
+}
+a{
+	text-decoration: none;
+	color: blue;
 }
