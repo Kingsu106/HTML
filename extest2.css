@@ -1,0 +1,45 @@
+* {
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+}
+.header{
+    overflow: hidden;
+    background-color: gray;
+    padding: 20px 10px;
+}
+.header a{
+    color: black;
+    float: left;
+    text-align: center;
+    padding: 12px;
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 25px;
+    border-radius: 4px;
+}
+.header .logo {
+    font-size: 25px;
+    font-weight: bold;
+}
+.header a:hover{
+    background-color: aqua;
+}
+.header a.actice{
+    background-color: blue;
+    color: white;
+}
+.header-side{
+    float:right;
+}
+@media screen and (max-width: 500px) {
+    .header a {
+      float: none;
+      display: block;
+      text-align: left;
+    }
+    .header-side {
+      float: none;
+    }
+  }
